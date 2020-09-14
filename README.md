@@ -64,9 +64,9 @@ optimized version of the application compares to one with performance issues.
 
 ```bash
 # These need to be set according to your setup:
-export DEMO_APP_SQS_URL=https://sqs.YOUR-AWS-REGION.queue.amazonaws.com/YOUR-ACCOUNT-ID/DemoApplicationQueue
-export DEMO_APP_BUCKET_NAME=demo-application-test-bucket-1092734-YOUR-BUCKET-REPLACE-ME
-export AWS_CODEGURU_TARGET_REGION=YOUR-AWS-REGION
+export DEMO_APP_SQS_URL=https://sqs.ap-southeast-1.amazonaws.com/088494394900/DemoApplicationQueue
+export DEMO_APP_BUCKET_NAME=codeguru-replace-me 
+export AWS_CODEGURU_TARGET_REGION=ap-southeast-1
 
 # Run the demo!
 export AWS_CODEGURU_PROFILER_GROUP_NAME=DemoApplication-WithIssues
@@ -79,9 +79,9 @@ java -javaagent:codeguru-profiler-java-agent-standalone-1.0.0.jar \
 
 ```bash
 # These need to be set according to your setup:
-export DEMO_APP_SQS_URL=https://sqs.YOUR-AWS-REGION.queue.amazonaws.com/YOUR-ACCOUNT-ID/DemoApplicationQueue
-export DEMO_APP_BUCKET_NAME=demo-application-test-bucket-1092734-YOUR-BUCKET-REPLACE-ME
-export AWS_CODEGURU_TARGET_REGION=YOUR-AWS-REGION
+export DEMO_APP_SQS_URL=https://sqs.ap-southeast-1.amazonaws.com/088494394900/DemoApplicationQueue
+export DEMO_APP_BUCKET_NAME=codeguru-replace-me
+export AWS_CODEGURU_TARGET_REGION=ap-southeast-1
 
 # Run the demo!
 export AWS_CODEGURU_PROFILER_GROUP_NAME=DemoApplication-WithoutIssues
